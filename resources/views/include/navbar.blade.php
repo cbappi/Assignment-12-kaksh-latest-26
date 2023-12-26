@@ -12,6 +12,15 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link" href=" {{route('locations.create') }} ">Add Locations</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href=" {{route('locations.index') }} ">Locations</a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href=" {{route('trips.create') }} ">Add trip</a>
             </li>
             <li class="nav-item">

@@ -12,6 +12,7 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\LocationController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SeatAllocationController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -66,5 +67,6 @@ Route::get('/subjects', [SubjectController::class, 'index']);
 
 Route::resource('trips', TripController::class);
 Route::resource('seat_allocations', SeatAllocationController::class);
+Route::resource('locations', LocationController::class);
 
 
