@@ -32,6 +32,15 @@
             <li class="nav-item">
                 <a class="nav-link" href=" {{route('seat_allocations.index') }} ">Booking details</a>
             </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href=" {{route('users.index') }} ">Users detail</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href=" {{route('dashboard.index') }} ">Dashboard</a>
+            </li>
           {{-- <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{ route('sellshistory') }}">Sales history</a>
           </li> --}}

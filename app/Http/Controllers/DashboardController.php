@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Sale;
-use App\Models\Product;
 use App\Models\SeatAllocation;
 use Carbon\Carbon;
 use Illuminate\Http\Request;

@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\TripController;
-use App\Http\Controllers\CommentController;
+use App\Http\Controllers\UserController;
 
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\SubjectController;
@@ -68,5 +69,7 @@ Route::get('/subjects', [SubjectController::class, 'index']);
 Route::resource('trips', TripController::class);
 Route::resource('seat_allocations', SeatAllocationController::class);
 Route::resource('locations', LocationController::class);
+Route::resource('users', UserController::class);
+Route::resource('dashboard', DashboardController::class);
 
 
