@@ -20,10 +20,10 @@ class SeatAllocationController extends Controller
     public function create()
     {
         $trips = Trip::all();
-        //$locations = Location::all();
-
         return view('seat_allocations.create', compact('trips'));
     }
+
+
 
     public function store(Request $request)
     {
@@ -50,10 +50,16 @@ class SeatAllocationController extends Controller
 
                 ]);
 
+                $trip = Trip::find($request->trip_id);
+                $trip->sit_quantity -= $request->ticket_quantity;
+                $trip->save();
+
 
 
             return redirect()->route('seat_allocations.index')->with('success', 'Seat allocation created successfully');
     }
+
+  
 
     public function show(SeatAllocation $seatAllocation)
     {
@@ -78,7 +84,7 @@ class SeatAllocationController extends Controller
             'phone' => 'required|string|unique:seat_allocations,phone,' . $seatAllocation->id,
             'ticket_quantity' => 'required|integer',
             'price' => 'required|integer',
-      
+
         ]);
 
 
