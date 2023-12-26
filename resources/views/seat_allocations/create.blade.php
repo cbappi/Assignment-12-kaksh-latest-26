@@ -1,6 +1,6 @@
-<!-- resources/views/seat_allocations/create.blade.php -->
 
-@extends('master') <!-- You may need to adjust this based on your project's layout structure -->
+
+@extends('master')
 
 @section('content')
     <div class="container">
@@ -49,24 +49,6 @@
                 <input type="number" name="price" class="form-control" required>
             </div>
 
-            {{-- <div class="form-group">
-                <label for="amount">Amount:</label>
-                <input type="number" name="amount" class="form-control" required>
-            </div> --}}
-
-            {{-- <div class="form-group">
-                <label for="bus_start_time">Bus Start Time:</label>
-                <input type="time" name="bus_start_time" class="form-control">
-            </div> --}}
-
-            {{-- <div class="form-group">
-                <label for="bus_start_time">Bus Start Time:</label>
-                <select name="trip_id" class="form-control" required>
-                    @foreach($trips as $trip)
-                        <option value="{{ $trip->id }}">{{ $trip->start_time }}</option>
-                    @endforeach
-                </select>
-            </div> --}}
 
             <button type="submit" class="btn btn-primary">Create Seat Allocation</button>
         </form>

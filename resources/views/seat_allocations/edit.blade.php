@@ -1,6 +1,6 @@
-<!-- resources/views/seat_allocations/edit.blade.php -->
 
-@extends('master') <!-- You may need to adjust this based on your project's layout structure -->
+
+@extends('master')
 
 @section('content')
     <div class="container">
@@ -40,10 +40,7 @@
                 <input type="text" name="phone" class="form-control" value="{{ $seatAllocation->phone }}" required>
             </div>
 
-            {{-- <div class="form-group">
-                <label for="destination">Destination:</label>
-                <input type="text" name="destination" class="form-control" value="{{ $seatAllocation->destination }}" required>
-            </div> --}}
+
 
             <div class="form-group">
                 <label for="ticket_quantity">Ticket Quantity:</label>
@@ -55,15 +52,6 @@
                 <input type="number" name="price" class="form-control" value="{{ $seatAllocation->price }}" required>
             </div>
 
-            {{-- <div class="form-group">
-                <label for="amount">Amount:</label>
-                <input type="number" name="amount" class="form-control" value="{{ $seatAllocation->amount }}" required>
-            </div> --}}
-
-            {{-- <div class="form-group">
-                <label for="bus_start_time">Bus Start Time:</label>
-                <input type="time" name="bus_start_time" class="form-control" value="{{ $seatAllocation->bus_start_time }}">
-            </div> --}}
 
             <button type="submit" class="btn btn-primary">Update Seat Allocation</button>
         </form>

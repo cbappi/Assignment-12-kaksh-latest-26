@@ -1,4 +1,4 @@
-@extends('master') <!-- You may need to adjust this based on your project's layout structure -->
+@extends('master') 
 
 @section('content')
     <div class="container">

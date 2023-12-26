@@ -34,7 +34,7 @@ class SeatAllocationController extends Controller
                 return redirect()->route('seat_allocations.create')->with('success',(36 - $sumTicketQuantity) . ' seat(s) remaining.');
             }
 
-          
+
 
             SeatAllocation::create([
                 'trip_id' => $request->trip_id,
@@ -53,29 +53,6 @@ class SeatAllocationController extends Controller
 
 
             return redirect()->route('seat_allocations.index')->with('success', 'Seat allocation created successfully');
-
-
-
-
-
-
-    // ... Other methods ...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // return redirect()->route('seat_allocations.index')->with('success', 'Seat allocation created successfully');
     }
 
     public function show(SeatAllocation $seatAllocation)
@@ -91,46 +68,17 @@ class SeatAllocationController extends Controller
         return view('seat_allocations.edit', compact('seatAllocation', 'trips', 'locations'));
     }
 
-    // public function update(Request $request, SeatAllocation $seatAllocation)
-    // {
 
-    //     //dd($request->all());
-    //     $request->validate([
-    //         'trip_id' => 'required|exists:trips,id',
-    //         //'user_id' => 'required|exists:users,id',
-    //         'location_id' => 'required|exists:locations,id',
-    //         'trip_date' => 'required|date',
-    //         'name' => 'required|string',
-    //         'phone' => 'required|string|unique:seat_allocations,phone,' . $seatAllocation->id,
-    //         'destination' => 'required|string',
-    //         'ticket_quantity' => 'required|integer',
-    //         'price' => 'required|integer',
-    //         'amount' => 'required|integer',
-    //         'bus_start_time' => 'nullable|date_format:H:i',
-    //     ]);
-
-    //     $seatAllocation->update($request->all());
-
-    //    // dd($request->all());
-
-    //     return redirect()->route('seat_allocations.index')->with('success', 'Seat allocation updated successfully');
-
-
-    // }
 
     public function update(Request $request, SeatAllocation $seatAllocation)
     {
         $request->validate([
             'trip_id' => 'required|exists:trips,id',
-           // 'location_id' => 'required|exists:locations,id',
-           // 'trip_date' => 'required|date',
             'name' => 'required|string',
             'phone' => 'required|string|unique:seat_allocations,phone,' . $seatAllocation->id,
-            //'destination' => 'required|string',
             'ticket_quantity' => 'required|integer',
             'price' => 'required|integer',
-           //'amount' => 'required|integer',
-           // 'bus_start_time' => 'nullable|date_format:H:i',
+      
         ]);
 
 

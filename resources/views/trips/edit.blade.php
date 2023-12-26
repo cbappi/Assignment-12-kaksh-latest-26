@@ -1,6 +1,6 @@
-<!-- resources/views/trips/edit.blade.php -->
 
-@extends('master') <!-- You may need to adjust this based on your project's layout structure -->
+
+@extends('master')
 
 @section('content')
     <div class="container">
@@ -14,7 +14,7 @@
             @csrf
             @method('PUT')
 
-            
+
 
             <div class="form-group">
                 <label for="trip_date">Trip Date:</label>

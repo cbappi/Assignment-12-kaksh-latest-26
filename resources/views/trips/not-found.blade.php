@@ -1,4 +1,4 @@
-<!-- resources/views/trip/not-found.blade.php -->
+
 @extends('master')
 
 @section('content')

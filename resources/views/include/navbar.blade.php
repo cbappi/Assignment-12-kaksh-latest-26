@@ -26,9 +26,7 @@
             <li class="nav-item">
                 <a class="nav-link" href=" {{route('trips.index') }} ">Show trips</a>
             </li>
-            {{-- <li class="nav-item">
-                <a class="nav-link" href=" {{route('seat_allocations.create') }} ">Sit booking</a>
-            </li> --}}
+
             <li class="nav-item">
                 <a class="nav-link" href=" {{route('seat_allocations.index') }} ">Booking details</a>
             </li>
@@ -41,45 +39,6 @@
             <li class="nav-item">
                 <a class="nav-link" href=" {{route('dashboard.index') }} ">Dashboard</a>
             </li>
-          {{-- <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ route('sellshistory') }}">Sales history</a>
-          </li> --}}
-{{--
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}">Dashboard</a>
-          </li> --}}
-
-{{--
-          <li class="nav-item">
-            <a class="nav-link" href=" {{route('trip.index') }} ">Search trip</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link" href=" {{route('trip.tripdetails') }} ">Trip details</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link" href=" {{route('seat-allocations.index') }} ">Allocated seat</a>
-          </li> --}}
-
-
-          {{-- <li class="nav-item">
-            <a class="nav-link" href=" {{route('seat-allocations.create') }} ">Ticket booking</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href=" {{route('dashboard') }} ">Dashboard</a>
-          </li> --}}
-
-          {{-- <li class="nav-item">
-            <a class="nav-link" href=" {{route('trips.create') }} ">Add Trips</a>
-          </li> --}}
-{{--
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('trips.index') }}">Index</a>
-          </li> --}}
 
         </ul>
 

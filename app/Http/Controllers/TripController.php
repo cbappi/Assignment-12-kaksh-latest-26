@@ -52,7 +52,7 @@ class TripController extends Controller
             'from' => 'required|string',
             'to' => 'required|string',
             'sit_quantity' => 'required|integer',
-            //'start_time' => 'nullable|date_format:H:i',
+        
         ]);
 
         $trip->update($request->all());

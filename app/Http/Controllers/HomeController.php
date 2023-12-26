@@ -44,7 +44,7 @@ class HomeController extends Controller
 
     public function bookTicket()
     {
-        //return view('book_ticket');
+        
         return view('seat_allocatios.create');
     }
 }

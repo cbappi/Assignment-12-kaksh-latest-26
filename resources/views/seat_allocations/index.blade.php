@@ -1,7 +1,6 @@
-<!-- resources/views/seat_allocations/index.blade.php -->
 
-@extends('master') <!-- You may need to adjust this based on your project's layout structure -->
 
+@extends('master')
 @section('content')
     <div class="container">
         <h2>Seat Allocations</h2>

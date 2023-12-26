@@ -1,11 +1,5 @@
-<!-- resources/views/trip/index.blade.php -->
+
 @extends('master')
-
-@section('content')
-
-<!-- resources/views/trips/index.blade.php -->
-
-
 
 @section('content')
     <div class="container">
