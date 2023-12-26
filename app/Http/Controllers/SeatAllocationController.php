@@ -27,25 +27,6 @@ class SeatAllocationController extends Controller
 
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'trip_id' => 'required|exists:trips,id',
-        //     //'location_id' => 'required|exists:locations,id',
-        //     //'trip_date' => 'required|date',
-        //     'name' => 'required|string',
-        //     'phone' => 'required|string|unique:seat_allocations',
-        //     //'destination' => 'required|string',
-        //     'ticket_quantity' => 'required|integer',
-        //     'price' => 'required|integer',
-        //     'amount' => 'required|integer',
-        //     //'bus_start_time' => 'nullable|date_format:H:i',
-        // ]);
-
-        //SeatAllocation::create($request->all());
-
-
-
-
-            //SeatAllocation::create($request->all());
 
             $sumTicketQuantity = SeatAllocation::where('trip_id', $request->trip_id)->sum('ticket_quantity');
 
@@ -53,12 +34,11 @@ class SeatAllocationController extends Controller
                 return redirect()->route('seat_allocations.create')->with('success',(36 - $sumTicketQuantity) . ' seat(s) remaining.');
             }
 
-            // elseif(($sumTicketQuantity + $request->ticket_quantity)== 36) {
-            //     return redirect()->route('seat_allocations.create')->with('success', 'All tickets sold. Only ' . (36 - $sumTicketQuantity) . ' seat(s) remaining.');
-            // }
+          
 
             SeatAllocation::create([
                 'trip_id' => $request->trip_id,
+                'trip_date' => $request->trip_date,
                 'name' => $request->name,
                 'phone' => $request->phone,
                 'ticket_quantity' => $request->ticket_quantity,

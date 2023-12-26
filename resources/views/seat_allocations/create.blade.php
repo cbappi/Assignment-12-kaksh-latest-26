@@ -21,43 +21,11 @@
                     @endforeach
                 </select>
             </div>
-{{--
+
             <div class="form-group">
-                <label for="location_id">Select Starting Location:</label>
-                <select name="location_id" class="form-control" required>
-                    @foreach($locations as $location)
-                        <option value="{{ $location->id }}">{{ $location->destination }}</option>
-                    @endforeach
-                </select>
-            </div> --}}
-
-
-            {{-- <div class="form-group">
-                <label for="location_id">Select Finish Location:</label>
-                <select name="destination" class="form-control" required>
-                    @foreach($locations as $location)
-                        <option value="{{ $location->id }}">{{ $location->destination }}</option>
-                    @endforeach
-                </select>
-            </div> --}}
-
-
-{{--
-            <div class="form-group">
-                <label for="trip_date">Trip Date:</label>
+                <label for="trip_date">Trip date:</label>
                 <input type="date" name="trip_date" class="form-control" required>
-            </div> --}}
-
-            {{-- <div class="form-group">
-                <label for="trip_id">Select Trip:</label>
-                <select name="trip_date" class="form-control" required>
-                    @foreach($trips as $trip)
-                        <option value="{{ $trip->id }}">{{ $trip->trip_date }}</option>
-                    @endforeach
-                </select>
-            </div> --}}
-
-
+            </div>
 
             <div class="form-group">
                 <label for="name">Passenger name:</label>

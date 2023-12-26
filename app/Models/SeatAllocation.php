@@ -14,7 +14,7 @@ class SeatAllocation extends Model
     protected $fillable = [
         'trip_id',
 
-
+        'trip_date',
 
         'name',
         'phone',

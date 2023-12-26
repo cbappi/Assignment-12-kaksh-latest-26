@@ -14,17 +14,6 @@
             @csrf
             @method('PUT')
 
-            {{-- <div class="form-group">
-                <label for="trip_id">Select Trip:</label>
-                <select name="trip_id" class="form-control" required>
-                    @foreach($trips as $trip)
-                        <option value="{{ $trip->id }}" {{ $trip->id == $seatAllocation->trip_id ? 'selected' : '' }}>
-                            {{ $trip->from }} to {{ $trip->to }} - {{ $trip->trip_date }}
-                        </option>
-                    @endforeach
-                </select>
-            </div> --}}
-
 
             <div class="form-group">
                 <label for="trip_id">Select Trip:</label>
@@ -35,21 +24,11 @@
                 </select>
             </div>
 
-            {{-- <div class="form-group">
-                <label for="location_id">Select Location:</label>
-                <select name="location_id" class="form-control" required>
-                    @foreach($locations as $location)
-                        <option value="{{ $location->id }}" {{ $location->id == $seatAllocation->location_id ? 'selected' : '' }}>
-                            {{ $location->destination }}
-                        </option>
-                    @endforeach
-                </select>
-            </div> --}}
 
-            {{-- <div class="form-group">
-                <label for="trip_date">Trip Date:</label>
+            <div class="form-group">
+                <label for="trip_date">Trip date:</label>
                 <input type="date" name="trip_date" class="form-control" value="{{ $seatAllocation->trip_date }}" required>
-            </div> --}}
+            </div>
 
             <div class="form-group">
                 <label for="name">Name:</label>
